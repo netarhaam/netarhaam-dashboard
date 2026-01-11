@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support NetArhaam Development - Donate Today</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>NetArhaam<span class="trademark">™</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
+                <li><a href="documentation.html"><i class="fas fa-book"></i> Documentation</a></li>
+                <li><a href="donate.html" class="active"><i class="fas fa-heart"></i> Donate</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="donate-hero">
+        <div class="container">
+            <h1>Support NetArhaam Development</h1>
+            <p class="subtitle">Your donation helps improve this free tool for everyone</p>
+            
+            <div class="donate-message">
+                <i class="fas fa-hand-holding-heart"></i>
+                <p>NetArhaam Dashboard is completely <strong>free and open-source</strong>. Your support allows us to continue development, add new features, and provide better support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation-options">
+        <div class="container">
+            <h2 class="section-title">Choose Donation Method</h2>
+            
+            <div class="donation-cards">
+                <!-- PayPal -->
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                    <h3>PayPal</h3>
+                    <p>One-time or recurring donations via PayPal</p>
+                    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                        <input type="hidden" name="business" value="your-paypal-email@example.com">
+                        <input type="hidden" name="no_recurring" value="0">
+                        <input type="hidden" name="item_name" value="NetArhaam Dashboard Development">
+                        <input type="hidden" name="currency_code" value="USD">
+                        
+                        <div class="amount-buttons">
+                            <button type="submit" name="amount" value="5" class="amount-btn">$5</button>
+                            <button type="submit" name="amount" value="10" class="amount-btn">$10</button>
+                            <button type="submit" name="amount" value="25" class="amount-btn">$25</button>
+                            <input type="number" name="amount" placeholder="Other" min="1" step="1" class="amount-input">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-paypal">
+                            <i class="fab fa-paypal"></i> Donate with PayPal
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Crypto -->
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Cryptocurrency</h3>
+                    <p>Support with Bitcoin, Ethereum, or other cryptos</p>
+                    
+                    <div class="crypto-addresses">
+                        <div class="crypto-address">
+                            <strong>Bitcoin (BTC):</strong>
+                            <code class="address">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</code>
+                            <button class="copy-btn" data-address="bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        
+                        <div class="crypto-address">
+                            <strong>Ethereum (ETH):</strong>
+                            <code class="address">0x71C7656EC7ab88b098defB751B7401B5f6d8976F</code>
+                            <button class="copy-btn" data-address="0x71C7656EC7ab88b098defB751B7401B5f6d8976F">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <p class="crypto-note"><i class="fas fa-qrcode"></i> QR codes available upon request</p>
+                </div>
+                
+                <!-- GitHub Sponsors -->
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub Sponsors</h3>
+                    <p>Become a monthly sponsor on GitHub</p>
+                    <a href="https://github.com/sponsors" target="_blank" class="btn btn-github">
+                        <i class="fab fa-github"></i> Sponsor on GitHub
+                    </a>
+                    <p class="github-note">Get recognition on our GitHub repository</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation-impact">
+        <div class="container">
+            <h2 class="section-title">How Your Donation Helps</h2>
+            
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Feature Development</h3>
+                    <p>New features like historical reporting, alerts, and more dashboard widgets</p>
+                </div>
+                
+                <div class="impact-item">
+                    <i class="fas fa-bug"></i>
+                    <h3>Bug Fixes</h3>
+                    <p>Faster resolution of issues and compatibility updates</p>
+                </div>
+                
+                <div class="impact-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Hosting Costs</h3>
+                    <p>Website hosting, domain renewal, and download bandwidth</p>
+                </div>
+                
+                <div class="impact-item">
+                    <i class="fas fa-book"></i>
+                    <h3>Documentation</h3>
+                    <p>Better documentation, video tutorials, and user guides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="supporters">
+        <div class="container">
+            <h2 class="section-title">Our Supporters</h2>
+            <p class="section-subtitle">Thank you to everyone who has contributed!</p>
+            
+            <div class="supporter-tiers">
+                <div class="tier">
+                    <h3><i class="fas fa-crown gold"></i> Gold Supporters</h3>
+                    <div class="supporter-list">
+                        <span>Network Security Corp</span>
+                        <span>IT Solutions Ltd</span>
+                        <span>John D. (Enterprise User)</span>
+                    </div>
+                </div>
+                
+                <div class="tier">
+                    <h3><i class="fas fa-star silver"></i> Silver Supporters</h3>
+                    <div class="supporter-list">
+                        <span>Sarah M.</span>
+                        <span>Firewall Experts LLC</span>
+                        <span>Mike R.</span>
+                        <span>+5 others</span>
+                    </div>
+                </div>
+                
+                <div class="tier">
+                    <h3><i class="fas fa-heart bronze"></i> Bronze Supporters</h3>
+                    <div class="supporter-list">
+                        <span>Alex K.</span>
+                        <span>Network Admin Team</span>
+                        <span>+12 others</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="become-supporter">
+                <h3>Become a Supporter</h3>
+                <p>Donate $25 or more to have your name/company listed here</p>
+                <a href="#donation-options" class="btn btn-primary">
+                    <i class="fas fa-award"></i> Get Listed
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="free-alternative">
+        <div class="container">
+            <div class="free-message">
+                <i class="fas fa-gift"></i>
+                <div>
+                    <h3>Can't Donate? No Problem!</h3>
+                    <p>The dashboard will always remain <strong>free and open-source</strong>. You can still help by:</p>
+                    <ul>
+                        <li><i class="fas fa-star"></i> Starring our GitHub repository</li>
+                        <li><i class="fas fa-share-alt"></i> Sharing with colleagues</li>
+                        <li><i class="fas fa-bug"></i> Reporting bugs</li>
+                        <li><i class="fas fa-lightbulb"></i> Suggesting features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Same footer as index.html -->
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Copy crypto address functionality
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const address = this.getAttribute('data-address');
+                navigator.clipboard.writeText(address).then(() => {
+                    const original = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                    setTimeout(() => {
+                        this.innerHTML = original;
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
