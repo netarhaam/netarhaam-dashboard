@@ -1,236 +1,283 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support NetArhaam Development - Donate Today</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-shield-alt"></i>
-                <span>NetArhaam<span class="trademark">™</span></span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
-                <li><a href="documentation.html"><i class="fas fa-book"></i> Documentation</a></li>
-                <li><a href="donate.html" class="active"><i class="fas fa-heart"></i> Donate</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+/* Donate Page Styles */
+.donate-hero {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
 
-    <section class="donate-hero">
-        <div class="container">
-            <h1>Support NetArhaam Development</h1>
-            <p class="subtitle">Your donation helps improve this free tool for everyone</p>
-            
-            <div class="donate-message">
-                <i class="fas fa-hand-holding-heart"></i>
-                <p>NetArhaam Dashboard is completely <strong>free and open-source</strong>. Your support allows us to continue development, add new features, and provide better support.</p>
-            </div>
-        </div>
-    </section>
+.unicef-logo {
+    font-size: 48px;
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px 40px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
 
-    <section class="donation-options">
-        <div class="container">
-            <h2 class="section-title">Choose Donation Method</h2>
-            
-            <div class="donation-cards">
-                <!-- PayPal -->
-                <div class="donation-card">
-                    <div class="donation-icon">
-                        <i class="fab fa-paypal"></i>
-                    </div>
-                    <h3>PayPal</h3>
-                    <p>One-time or recurring donations via PayPal</p>
-                    <form action="https://www.paypal.com/donate" method="post" target="_blank">
-                        <input type="hidden" name="business" value="your-paypal-email@example.com">
-                        <input type="hidden" name="no_recurring" value="0">
-                        <input type="hidden" name="item_name" value="NetArhaam Dashboard Development">
-                        <input type="hidden" name="currency_code" value="USD">
-                        
-                        <div class="amount-buttons">
-                            <button type="submit" name="amount" value="5" class="amount-btn">$5</button>
-                            <button type="submit" name="amount" value="10" class="amount-btn">$10</button>
-                            <button type="submit" name="amount" value="25" class="amount-btn">$25</button>
-                            <input type="number" name="amount" placeholder="Other" min="1" step="1" class="amount-input">
-                        </div>
-                        
-                        <button type="submit" class="btn btn-paypal">
-                            <i class="fab fa-paypal"></i> Donate with PayPal
-                        </button>
-                    </form>
-                </div>
-                
-                <!-- Crypto -->
-                <div class="donation-card">
-                    <div class="donation-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3>Cryptocurrency</h3>
-                    <p>Support with Bitcoin, Ethereum, or other cryptos</p>
-                    
-                    <div class="crypto-addresses">
-                        <div class="crypto-address">
-                            <strong>Bitcoin (BTC):</strong>
-                            <code class="address">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</code>
-                            <button class="copy-btn" data-address="bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh">
-                                <i class="fas fa-copy"></i> Copy
-                            </button>
-                        </div>
-                        
-                        <div class="crypto-address">
-                            <strong>Ethereum (ETH):</strong>
-                            <code class="address">0x71C7656EC7ab88b098defB751B7401B5f6d8976F</code>
-                            <button class="copy-btn" data-address="0x71C7656EC7ab88b098defB751B7401B5f6d8976F">
-                                <i class="fas fa-copy"></i> Copy
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <p class="crypto-note"><i class="fas fa-qrcode"></i> QR codes available upon request</p>
-                </div>
-                
-                <!-- GitHub Sponsors -->
-                <div class="donation-card">
-                    <div class="donation-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3>GitHub Sponsors</h3>
-                    <p>Become a monthly sponsor on GitHub</p>
-                    <a href="https://github.com/sponsors" target="_blank" class="btn btn-github">
-                        <i class="fab fa-github"></i> Sponsor on GitHub
-                    </a>
-                    <p class="github-note">Get recognition on our GitHub repository</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.unicef-logo i {
+    font-size: 60px;
+}
 
-    <section class="donation-impact">
-        <div class="container">
-            <h2 class="section-title">How Your Donation Helps</h2>
-            
-            <div class="impact-grid">
-                <div class="impact-item">
-                    <i class="fas fa-code"></i>
-                    <h3>Feature Development</h3>
-                    <p>New features like historical reporting, alerts, and more dashboard widgets</p>
-                </div>
-                
-                <div class="impact-item">
-                    <i class="fas fa-bug"></i>
-                    <h3>Bug Fixes</h3>
-                    <p>Faster resolution of issues and compatibility updates</p>
-                </div>
-                
-                <div class="impact-item">
-                    <i class="fas fa-server"></i>
-                    <h3>Hosting Costs</h3>
-                    <p>Website hosting, domain renewal, and download bandwidth</p>
-                </div>
-                
-                <div class="impact-item">
-                    <i class="fas fa-book"></i>
-                    <h3>Documentation</h3>
-                    <p>Better documentation, video tutorials, and user guides</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.donate-message {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
 
-    <section class="supporters">
-        <div class="container">
-            <h2 class="section-title">Our Supporters</h2>
-            <p class="section-subtitle">Thank you to everyone who has contributed!</p>
-            
-            <div class="supporter-tiers">
-                <div class="tier">
-                    <h3><i class="fas fa-crown gold"></i> Gold Supporters</h3>
-                    <div class="supporter-list">
-                        <span>Network Security Corp</span>
-                        <span>IT Solutions Ltd</span>
-                        <span>John D. (Enterprise User)</span>
-                    </div>
-                </div>
-                
-                <div class="tier">
-                    <h3><i class="fas fa-star silver"></i> Silver Supporters</h3>
-                    <div class="supporter-list">
-                        <span>Sarah M.</span>
-                        <span>Firewall Experts LLC</span>
-                        <span>Mike R.</span>
-                        <span>+5 others</span>
-                    </div>
-                </div>
-                
-                <div class="tier">
-                    <h3><i class="fas fa-heart bronze"></i> Bronze Supporters</h3>
-                    <div class="supporter-list">
-                        <span>Alex K.</span>
-                        <span>Network Admin Team</span>
-                        <span>+12 others</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="become-supporter">
-                <h3>Become a Supporter</h3>
-                <p>Donate $25 or more to have your name/company listed here</p>
-                <a href="#donation-options" class="btn btn-primary">
-                    <i class="fas fa-award"></i> Get Listed
-                </a>
-            </div>
-        </div>
-    </section>
+.message-card {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    <section class="free-alternative">
-        <div class="container">
-            <div class="free-message">
-                <i class="fas fa-gift"></i>
-                <div>
-                    <h3>Can't Donate? No Problem!</h3>
-                    <p>The dashboard will always remain <strong>free and open-source</strong>. You can still help by:</p>
-                    <ul>
-                        <li><i class="fas fa-star"></i> Starring our GitHub repository</li>
-                        <li><i class="fas fa-share-alt"></i> Sharing with colleagues</li>
-                        <li><i class="fas fa-bug"></i> Reporting bugs</li>
-                        <li><i class="fas fa-lightbulb"></i> Suggesting features</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+.message-icon {
+    font-size: 64px;
+    color: #ff6b6b;
+    margin-bottom: 30px;
+}
 
-    <footer class="footer">
-        <div class="container">
-            <!-- Same footer as index.html -->
-        </div>
-    </footer>
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
 
-    <script src="js/main.js"></script>
-    <script>
-        // Copy crypto address functionality
-        document.querySelectorAll('.copy-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const address = this.getAttribute('data-address');
-                navigator.clipboard.writeText(address).then(() => {
-                    const original = this.innerHTML;
-                    this.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                    setTimeout(() => {
-                        this.innerHTML = original;
-                    }, 2000);
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+.stat {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat i {
+    font-size: 40px;
+    color: #ee5a24;
+    margin-bottom: 15px;
+}
+
+.donate-action {
+    padding: 80px 0;
+}
+
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.donation-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.donation-header {
+    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.donation-header i {
+    font-size: 28px;
+}
+
+.donation-body {
+    padding: 30px;
+}
+
+.donation-amounts {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.amount-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.amount-btn {
+    flex: 1;
+    min-width: 80px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.amount-btn:hover,
+.amount-btn.active {
+    background: #ee5a24;
+    color: white;
+    border-color: #ee5a24;
+}
+
+#customAmount {
+    flex: 2;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-donate {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
+    border: none;
+}
+
+.btn-donate:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(238, 90, 36, 0.4);
+}
+
+.awareness-actions {
+    margin: 25px 0;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.action-item i {
+    font-size: 24px;
+    color: #ee5a24;
+    min-width: 40px;
+}
+
+.social-share {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.social-btn.facebook { background: #3b5998; }
+.social-btn.twitter { background: #1da1f2; }
+.social-btn.linkedin { background: #0077b5; }
+
+.social-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.unicef-info {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.unicef-facts {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+    border-left: 5px solid #ee5a24;
+}
+
+.info-image {
+    text-align: center;
+}
+
+.image-placeholder {
+    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
+    color: white;
+    padding: 60px 30px;
+    border-radius: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder i {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.disclaimer {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.charity-note {
+    color: #ee5a24;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .donation-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
+}
