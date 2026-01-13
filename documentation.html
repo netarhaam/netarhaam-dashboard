@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetArhaam Dashboard Documentation - Setup Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>NetArhaam<span class="trademark">™</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
+                <li><a href="documentation.html" class="active"><i class="fas fa-book"></i> Documentation</a></li>
+                <li><a href="donate.html"><i class="fas fa-heart"></i> Donate</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="docs-hero">
+        <div class="container">
+            <h1>NetArhaam Dashboard Documentation</h1>
+            <p class="subtitle">Complete setup guide and user manual</p>
+        </div>
+    </section>
+
+    <section class="docs-container">
+        <div class="container">
+            <div class="docs-sidebar">
+                <h3><i class="fas fa-list"></i> Table of Contents</h3>
+                <ul class="docs-nav">
+                    <li><a href="#installation"><i class="fas fa-download"></i> Installation</a></li>
+                    <li><a href="#configuration"><i class="fas fa-cog"></i> Configuration</a></li>
+                    <li><a href="#firewall"><i class="fas fa-network-wired"></i> Firewall Setup</a></li>
+                    <li><a href="#features"><i class="fas fa-star"></i> Features</a></li>
+                    <li><a href="#troubleshooting"><i class="fas fa-wrench"></i> Troubleshooting</a></li>
+                    <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="docs-content">
+                <!-- Installation Section -->
+                <section id="installation" class="docs-section">
+                    <h2><i class="fas fa-download"></i> Installation Guide</h2>
+                    
+                    <div class="docs-step">
+                        <h3>Step 1: Install Node.js</h3>
+                        <p>Download and install Node.js from <a href="https://nodejs.org/" target="_blank">nodejs.org</a> (version 16 or higher).</p>
+                        <div class="code-block">
+                            <p><strong>Verify installation:</strong></p>
+                            <pre><code>node --version
+npm --version</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="docs-step">
+                        <h3>Step 2: Download Dashboard</h3>
+                        <p>Download the portable package from our <a href="download.html">Download page</a>.</p>
+                        <p><strong>Recommended:</strong> Save to Desktop or C:\NetArhaam\</p>
+                    </div>
+                    
+                    <div class="docs-step">
+                        <h3>Step 3: Extract Files</h3>
+                        <p>Right-click the ZIP file → "Extract All" → Choose destination folder.</p>
+                        <p class="warning"><i class="fas fa-exclamation-triangle"></i> <strong>Important:</strong> Avoid paths with spaces or special characters.</p>
+                    </div>
+                    
+                    <div class="docs-step">
+                        <h3>Step 4: Run Dashboard</h3>
+                        <p>Double-click <code>LAUNCH.bat</code> in the extracted folder.</p>
+                        <div class="code-block">
+                            <p><strong>First run will:</strong></p>
+                            <ul>
+                                <li>Install required dependencies automatically</li>
+                                <li>Create necessary configuration files</li>
+                                <li>Open dashboard in your browser</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Configuration Section -->
+                <section id="configuration" class="docs-section">
+                    <h2><i class="fas fa-cog"></i> Configuration</h2>
+                    
+                    <div class="docs-step">
+                        <h3>Dashboard Settings</h3>
+                        <p>After first launch, configure these settings:</p>
+                        
+                        <div class="config-item">
+                            <h4><i class="fas fa-server"></i> Server Port</h4>
+                            <p>Default: <code>3000</code></p>
+                            <p>Change in <code>server.js</code> if port 3000 is in use:</p>
+                            <div class="code-block">
+                                <pre><code>const PORT = 3000; // Change this number</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="config-item">
+                            <h4><i class="fas fa-clock"></i> Refresh Interval</h4>
+                            <p>Default: <code>30 seconds</code></p>
+                            <p>How often to poll firewall for updates.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Firewall Setup Section -->
+                <section id="firewall" class="docs-section">
+                    <h2><i class="fas fa-network-wired"></i> Firewall Configuration</h2>
+                    
+                    <div class="docs-step">
+                        <h3>Palo Alto XML API Setup</h3>
+                        <p>Enable XML API on your Palo Alto firewall:</p>
+                        
+                        <div class="config-item">
+                            <h4>1. Enable XML API</h4>
+                            <p>In PAN-OS Web Interface:</p>
+                            <div class="code-block">
+                                <pre><code>Device → Setup → Management
+→ Export API Key (Generate Key)</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="config-item">
+                            <h4>2. API Permissions</h4>
+                            <p>Ensure API user has:</p>
+                            <ul>
+                                <li><code>operational</code> read access</li>
+                                <li><code>monitor</code> permissions</li>
+                                <li>Access to system stats</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="config-item">
+                            <h4>3. Configure in Dashboard</h4>
+                            <p>Enter these details in dashboard settings:</p>
+                            <div class="code-block">
+                                <pre><code>Firewall IP: 192.168.1.1 (or your firewall IP)
+API Key: [paste-your-api-key-here]
+Port: 443 (default)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Features Section -->
+                <section id="features" class="docs-section">
+                    <h2><i class="fas fa-star"></i> Features Overview</h2>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Real-time Monitoring</h4>
+                            <p>Live graphs of CPU, memory, and session usage</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h4>Alert System</h4>
+                            <p>Threshold-based alerts for critical metrics</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <h4>Historical Data</h4>
+                            <p>24-hour trend analysis and reporting</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Responsive Design</h4>
+                            <p>Access from desktop, tablet, or phone</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- FAQ Section -->
+                <section id="faq" class="docs-section">
+                    <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h4>Q: Is this tool officially from Palo Alto Networks?</h4>
+                        <p><strong>A:</strong> No, this is an independent, third-party tool created for monitoring Palo Alto firewalls. It's not affiliated with or endorsed by Palo Alto Networks.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Q: What data does the dashboard collect?</h4>
+                        <p><strong>A:</strong> The dashboard only collects firewall performance data via XML API. No data is stored externally or sent to any servers.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Q: Can I run this on a server for team access?</h4>
+                        <p><strong>A:</strong> Yes! Run it on a server and team members can access via browser. Change the IP in server.js from <code>localhost</code> to your server IP.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>Q: How do I update to a new version?</h4>
+                        <p><strong>A:</strong> Download the latest version from our website and extract to a new folder. Copy your configuration files over.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>NetArhaam<span class="trademark">™</span></span>
+                    </a>
+                    <p>Free, open-source firewall monitoring tool</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
+                        <li><a href="documentation.html"><i class="fas fa-book"></i> Documentation</a></li>
+                        <li><a href="donate.html"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:netarhaamsolutions@gmail.com">netarhaamsolutions@gmail.com</a></p>
+                    <p><i class="fas fa-globe"></i> <a href="https://netarhaam.github.io/netarhaam-dashboard/" target="_blank">Official Website</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NetArhaam Solutions. All rights reserved.</p>
+                <p>NetArhaam Dashboard is a free tool for network security monitoring.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Smooth scroll for documentation navigation
+        document.querySelectorAll('.docs-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Highlight current section in nav
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.docs-section');
+            const navLinks = document.querySelectorAll('.docs-nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
