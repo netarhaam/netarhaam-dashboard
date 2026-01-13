@@ -1,283 +1,293 @@
-/* Donate Page Styles */
-.donate-hero {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to UNICEF - Support NetArhaam's Charity Initiative</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>NetArhaam<span class="trademark">™</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
+                <li><a href="documentation.html"><i class="fas fa-book"></i> Documentation</a></li>
+                <li><a href="donate.html" class="active"><i class="fas fa-heart"></i> Donate to UNICEF</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-.unicef-logo {
-    font-size: 48px;
-    margin-top: 30px;
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    background: rgba(255,255,255,0.1);
-    padding: 20px 40px;
-    border-radius: 50px;
-    backdrop-filter: blur(10px);
-}
+    <section class="donate-hero">
+        <div class="container">
+            <h1>Support Children in Need</h1>
+            <p class="subtitle">Instead of donating to us, please donate directly to UNICEF</p>
+            <div class="unicef-logo">
+                <i class="fas fa-globe-americas"></i>
+                <span>UNICEF</span>
+            </div>
+        </div>
+    </section>
 
-.unicef-logo i {
-    font-size: 60px;
-}
+    <section class="donate-message">
+        <div class="container">
+            <div class="message-card">
+                <div class="message-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h2>Our Charity Initiative</h2>
+                <p>NetArhaam Dashboard is and will always be <strong>100% FREE</strong>. We believe in giving back to the community in a different way.</p>
+                <p>Instead of accepting donations for our software, we encourage our users to support <strong>UNICEF's mission to help children worldwide</strong>.</p>
+                
+                <div class="impact-stats">
+                    <div class="stat">
+                        <i class="fas fa-child"></i>
+                        <h3>Every Child</h3>
+                        <p>Deserves a safe and healthy childhood</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>Healthcare</h3>
+                        <p>Medical support for children in need</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>School supplies and learning resources</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-tint"></i>
+                        <h3>Clean Water</h3>
+                        <p>Access to safe drinking water</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.donate-message {
-    padding: 80px 0;
-    background: #f8f9fa;
-}
+    <section class="donate-action">
+        <div class="container">
+            <h2 class="section-title">Make a Difference Today</h2>
+            
+            <div class="donation-options">
+                <div class="donation-card">
+                    <div class="donation-header">
+                        <i class="fas fa-heart"></i>
+                        <h3>Direct Donation</h3>
+                    </div>
+                    <div class="donation-body">
+                        <p>Your donation to UNICEF helps provide:</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Emergency relief for children</li>
+                            <li><i class="fas fa-check"></i> Vaccines and medicines</li>
+                            <li><i class="fas fa-check"></i> Nutritional support</li>
+                            <li><i class="fas fa-check"></i> Education programs</li>
+                            <li><i class="fas fa-check"></i> Clean water access</li>
+                        </ul>
+                        
+                        <div class="donation-amounts">
+                            <p>Suggested amounts:</p>
+                            <div class="amount-buttons">
+                                <button class="amount-btn" data-amount="25">$25</button>
+                                <button class="amount-btn" data-amount="50">$50</button>
+                                <button class="amount-btn" data-amount="100">$100</button>
+                                <button class="amount-btn" data-amount="250">$250</button>
+                                <input type="number" id="customAmount" placeholder="Custom $">
+                            </div>
+                        </div>
+                        
+                        <a href="https://help.unicef.org/donate-to-children?country=31&source=google&medium=cpc&campaignid=21177488773&gad_source=1&gad_campaignid=21177489826&gbraid=0AAAAADCOMi71hyHig6y_mzLhxa1Z570Aq&gclid=CjwKCAiA95fLBhBPEiwATXUsxBk_TN__567nQpjl1cPQNYSwEqPFjSC0Z0AfIbLMD1WSjPr3KjWuExoCX6oQAvD_BwE" 
+                           target="_blank" 
+                           class="btn btn-primary btn-donate">
+                            <i class="fas fa-external-link-alt"></i> Donate Now to UNICEF
+                        </a>
+                        
+                        <p class="note"><i class="fas fa-lock"></i> Secure donation via UNICEF official website</p>
+                    </div>
+                </div>
+                
+                <div class="donation-card">
+                    <div class="donation-header">
+                        <i class="fas fa-share-alt"></i>
+                        <h3>Spread Awareness</h3>
+                    </div>
+                    <div class="donation-body">
+                        <p>Can't donate right now? You can still help by:</p>
+                        
+                        <div class="awareness-actions">
+                            <div class="action-item">
+                                <i class="fas fa-share-square"></i>
+                                <div>
+                                    <h4>Share This Page</h4>
+                                    <p>Tell others about UNICEF's work</p>
+                                </div>
+                            </div>
+                            
+                            <div class="action-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Volunteer</h4>
+                                    <p>Offer your time and skills locally</p>
+                                </div>
+                            </div>
+                            
+                            <div class="action-item">
+                                <i class="fas fa-hashtag"></i>
+                                <div>
+                                    <h4>Social Media</h4>
+                                    <p>Use #HelpUNICEF in your posts</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-share">
+                            <p>Share this initiative:</p>
+                            <div class="social-buttons">
+                                <button class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i> Share
+                                </button>
+                                <button class="social-btn twitter">
+                                    <i class="fab fa-twitter"></i> Tweet
+                                </button>
+                                <button class="social-btn linkedin">
+                                    <i class="fab fa-linkedin-in"></i> Post
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.message-card {
-    background: white;
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
+    <section class="unicef-info">
+        <div class="container">
+            <h2 class="section-title">About UNICEF</h2>
+            <div class="info-content">
+                <div class="info-text">
+                    <p><strong>UNICEF</strong> (United Nations Children's Fund) works in over 190 countries and territories to save children's lives, defend their rights, and help them fulfill their potential.</p>
+                    
+                    <div class="unicef-facts">
+                        <h3><i class="fas fa-star"></i> Why Support UNICEF?</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <strong>Proven Impact:</strong> 70+ years of helping children</li>
+                            <li><i class="fas fa-check"></i> <strong>Transparency:</strong> 90% of funds go directly to programs</li>
+                            <li><i class="fas fa-check"></i> <strong>Global Reach:</strong> Works in every corner of the world</li>
+                            <li><i class="fas fa-check"></i> <strong>Emergency Response:</strong> First on the ground in crises</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="disclaimer"><i class="fas fa-info-circle"></i> <strong>Note:</strong> NetArhaam Solutions is not affiliated with UNICEF. This is a voluntary initiative to encourage charitable giving.</p>
+                </div>
+                
+                <div class="info-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-heartbeat"></i>
+                        <p>Helping Children Worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.message-icon {
-    font-size: 64px;
-    color: #ff6b6b;
-    margin-bottom: 30px;
-}
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>NetArhaam<span class="trademark">™</span></span>
+                    </a>
+                    <p>Free, open-source firewall monitoring tool</p>
+                    <p class="charity-note"><i class="fas fa-heart"></i> Supporting UNICEF's mission</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
+                        <li><a href="documentation.html"><i class="fas fa-book"></i> Documentation</a></li>
+                        <li><a href="donate.html"><i class="fas fa-heart"></i> Donate to UNICEF</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Important Links</h4>
+                    <p><i class="fas fa-external-link-alt"></i> <a href="https://www.unicef.org/" target="_blank">UNICEF Official Website</a></p>
+                    <p><i class="fas fa-hand-holding-heart"></i> <a href="https://help.unicef.org/donate-to-children?country=31" target="_blank">Donate to Children</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NetArhaam Solutions. All rights reserved.</p>
+                <p>NetArhaam Dashboard is free software. We encourage supporting UNICEF's humanitarian work.</p>
+            </div>
+        </div>
+    </footer>
 
-.impact-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin: 40px 0;
-}
-
-.stat {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.stat i {
-    font-size: 40px;
-    color: #ee5a24;
-    margin-bottom: 15px;
-}
-
-.donate-action {
-    padding: 80px 0;
-}
-
-.donation-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin: 50px 0;
-}
-
-.donation-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.donation-header {
-    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
-    color: white;
-    padding: 25px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.donation-header i {
-    font-size: 28px;
-}
-
-.donation-body {
-    padding: 30px;
-}
-
-.donation-amounts {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 25px 0;
-}
-
-.amount-buttons {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.amount-btn {
-    flex: 1;
-    min-width: 80px;
-    padding: 12px;
-    border: 2px solid #ddd;
-    background: white;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.amount-btn:hover,
-.amount-btn.active {
-    background: #ee5a24;
-    color: white;
-    border-color: #ee5a24;
-}
-
-#customAmount {
-    flex: 2;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.btn-donate {
-    width: 100%;
-    padding: 18px;
-    font-size: 18px;
-    margin: 20px 0;
-    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
-    border: none;
-}
-
-.btn-donate:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(238, 90, 36, 0.4);
-}
-
-.awareness-actions {
-    margin: 25px 0;
-}
-
-.action-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.action-item i {
-    font-size: 24px;
-    color: #ee5a24;
-    min-width: 40px;
-}
-
-.social-share {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 25px;
-}
-
-.social-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.social-btn {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: all 0.3s;
-}
-
-.social-btn.facebook { background: #3b5998; }
-.social-btn.twitter { background: #1da1f2; }
-.social-btn.linkedin { background: #0077b5; }
-
-.social-btn:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
-.unicef-info {
-    padding: 80px 0;
-    background: #f8f9fa;
-}
-
-.info-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
-    align-items: center;
-}
-
-.unicef-facts {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    margin: 25px 0;
-    border-left: 5px solid #ee5a24;
-}
-
-.info-image {
-    text-align: center;
-}
-
-.image-placeholder {
-    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
-    color: white;
-    padding: 60px 30px;
-    border-radius: 15px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-placeholder i {
-    font-size: 80px;
-    margin-bottom: 20px;
-}
-
-.disclaimer {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.charity-note {
-    color: #ee5a24;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .info-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .donation-options {
-        grid-template-columns: 1fr;
-    }
-    
-    .impact-stats {
-        grid-template-columns: 1fr;
-    }
-}
+    <script src="js/main.js"></script>
+    <script>
+        // Amount selection
+        document.querySelectorAll('.amount-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                // Clear custom amount
+                document.getElementById('customAmount').value = '';
+            });
+        });
+        
+        // Custom amount input
+        document.getElementById('customAmount').addEventListener('input', function() {
+            document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+        });
+        
+        // Social sharing
+        document.querySelectorAll('.social-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const platform = this.classList.contains('facebook') ? 'facebook' :
+                               this.classList.contains('twitter') ? 'twitter' : 'linkedin';
+                
+                const url = encodeURIComponent(window.location.href);
+                const text = encodeURIComponent('Instead of donating to NetArhaam, please support UNICEF\'s mission to help children worldwide. #HelpUNICEF');
+                
+                let shareUrl = '';
+                
+                switch(platform) {
+                    case 'facebook':
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                        break;
+                    case 'twitter':
+                        shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+                        break;
+                    case 'linkedin':
+                        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                        break;
+                }
+                
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            });
+        });
+        
+        // Donate button confirmation
+        document.querySelector('.btn-donate').addEventListener('click', function(e) {
+            if(!confirm('You are being redirected to UNICEF\'s official donation page. Continue?')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
