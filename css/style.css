@@ -1,291 +1,367 @@
-/* Donate Page Styles */
-.donate-hero {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-    color: white;
-    padding: 100px 0;
-    text-align: center;
+/* =============================== */
+/* RESET & BASE STYLES             */
+/* =============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.unicef-logo {
-    font-size: 48px;
-    margin-top: 30px;
+:root {
+    --primary: #667eea;
+    --primary-dark: #5a67d8;
+    --secondary: #764ba2;
+    --accent: #ff6b6b;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --dark: #343a40;
+    --light: #f8f9fa;
+    --gray: #6c757d;
+    --border: #dee2e6;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: #f5f5f7;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =============================== */
+/* NAVIGATION                      */
+/* =============================== */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.logo i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.trademark {
+    font-size: 0.7rem;
+    vertical-align: super;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-menu a i {
+    margin-right: 8px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: var(--primary);
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+/* =============================== */
+/* COMMON COMPONENTS               */
+/* =============================== */
+
+/* Hero sections for ALL pages */
+.hero,
+.download-hero,
+.donate-hero,
+.contact-hero,
+.docs-hero {
+    padding: 140px 0 80px;
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
+
+/* Specific hero backgrounds */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.download-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.donate-hero {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+.contact-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.docs-hero {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Common hero elements */
+.hero-title,
+.donate-hero h1,
+.contact-hero h1,
+.docs-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    background: linear-gradient(45deg, var(--accent), #ffd166);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+/* =============================== */
+/* BUTTONS                         */
+/* =============================== */
+
+.btn {
     display: inline-flex;
     align-items: center;
-    gap: 15px;
-    background: rgba(255,255,255,0.1);
-    padding: 20px 40px;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: var(--gray);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-warning {
+    background: var(--warning);
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: #e0a800;
+}
+
+/* =============================== */
+/* HOME PAGE SPECIFIC              */
+/* =============================== */
+
+/* Add your home page specific styles here */
+
+/* =============================== */
+/* DOWNLOAD PAGE SPECIFIC          */
+/* =============================== */
+
+.requirements-alert {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.alert-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    color: var(--warning);
+}
+
+.alert-content ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.alert-content li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    color: var(--dark);
+}
+
+.download-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.download-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.download-card.featured {
+    border: 2px solid var(--primary);
+}
+
+.download-card-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.download-card-body {
+    padding: 2rem;
+}
+
+.features-list {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.features-list i {
+    color: var(--success);
+}
+
+.file-info {
+    background: var(--light);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.btn-download {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+/* =============================== */
+/* DONATE PAGE SPECIFIC            */
+/* =============================== */
+
+.unicef-logo {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 3rem;
     border-radius: 50px;
     backdrop-filter: blur(10px);
 }
 
 .unicef-logo i {
-    font-size: 60px;
+    font-size: 3rem;
 }
 
 .donate-message {
-    padding: 80px 0;
-    background: #f8f9fa;
+    padding: 5rem 0;
+    background: var(--light);
 }
 
 .message-card {
     background: white;
-    padding: 50px;
+    padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.message-icon {
-    font-size: 64px;
-    color: #ff6b6b;
-    margin-bottom: 30px;
-}
-
-.impact-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin: 40px 0;
-}
-
-.stat {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.stat i {
-    font-size: 40px;
-    color: #ee5a24;
-    margin-bottom: 15px;
-}
-
-.donate-action {
-    padding: 80px 0;
-}
-
-.donation-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin: 50px 0;
-}
-
-.donation-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.donation-header {
-    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
-    color: white;
-    padding: 25px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.donation-header i {
-    font-size: 28px;
-}
-
-.donation-body {
-    padding: 30px;
-}
-
-.donation-amounts {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 25px 0;
-}
-
-.amount-buttons {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.amount-btn {
-    flex: 1;
-    min-width: 80px;
-    padding: 12px;
-    border: 2px solid #ddd;
-    background: white;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.amount-btn:hover,
-.amount-btn.active {
-    background: #ee5a24;
-    color: white;
-    border-color: #ee5a24;
-}
-
-#customAmount {
-    flex: 2;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.btn-donate {
-    width: 100%;
-    padding: 18px;
-    font-size: 18px;
-    margin: 20px 0;
-    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
-    border: none;
-}
-
-.btn-donate:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(238, 90, 36, 0.4);
-}
-
-.awareness-actions {
-    margin: 25px 0;
-}
-
-.action-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.action-item i {
-    font-size: 24px;
-    color: #ee5a24;
-    min-width: 40px;
-}
-
-.social-share {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 25px;
-}
-
-.social-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.social-btn {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: all 0.3s;
-}
-
-.social-btn.facebook {
-    background: #3b5998;
-}
-
-.social-btn.twitter {
-    background: #1da1f2;
-}
-
-.social-btn.linkedin {
-    background: #0077b5;
-}
-
-.social-btn:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
-.unicef-info {
-    padding: 80px 0;
-    background: #f8f9fa;
-}
-
-.info-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
-    align-items: center;
-}
-
-.unicef-facts {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    margin: 25px 0;
-    border-left: 5px solid #ee5a24;
-}
-
-.info-image {
-    text-align: center;
-}
-
-.image-placeholder {
-    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
-    color: white;
-    padding: 60px 30px;
-    border-radius: 15px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-placeholder i {
-    font-size: 80px;
-    margin-bottom: 20px;
-}
-
-.disclaimer {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.charity-note {
-    color: #ee5a24;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .info-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .donation-options {
-        grid-template-columns: 1fr;
-    }
-    
-    .impact-stats {
-        grid-template-columns: 1fr;
-    }
-}
+    box-shadow: 0 10px 30px rgba(0, 0, 
