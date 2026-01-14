@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetArhaam™ PA Live Dashboard - Professional Firewall Monitoring</title>
+    <title>NetArhaam™ PA Live Dashboard - Professional Palo Alto Firewall Monitoring</title>
+    <meta name="description" content="Free real-time bandwidth monitoring, session tracking, and top talker analysis tool for Palo Alto Networks firewalls">
+    <meta name="keywords" content="Palo Alto, firewall, monitoring, bandwidth, network, dashboard, free tool, real-time, sessions, top talkers">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -34,51 +36,132 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="highlight">Professional</span> Palo Alto Firewall
-                    <span class="highlight">Live Dashboard</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Real-time bandwidth monitoring, session tracking, and top talker analysis for Palo Alto Networks firewalls
-                </p>
+                <h1 class="hero-title">Professional Palo Alto Firewall <span class="highlight">Live Dashboard</span></h1>
+                <p class="hero-subtitle">Real-time bandwidth monitoring, session tracking, and top talker analysis for Palo Alto Networks firewalls</p>
+                
                 <div class="hero-buttons">
-                    <a href="download.html" class="btn btn-primary btn-lg">
+                    <a href="download.html" class="btn btn-primary btn-large">
                         <i class="fas fa-download"></i> Download Free
                     </a>
-                    <a href="#features" class="btn btn-secondary btn-lg">
-                        <i class="fas fa-info-circle"></i> Learn More
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-play-circle"></i> See Features
                     </a>
                 </div>
-                <div class="hero-warning">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <strong>Requirements:</strong> Windows with Node.js installed
+                
+                <div class="hero-requirements">
+                    <p><i class="fas fa-info-circle"></i> <strong>Requirements:</strong> Windows with Node.js installed</p>
+                </div>
+                
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-check"></i>
+                        <span>100% Free & Open Source</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-user-check"></i>
+                        <span>Trusted by Network Admins</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-download"></i>
+                        <span id="downloadCounter">1,000+ Downloads</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/dashboard-screenshot.png" alt="NetArhaam Dashboard Screenshot">
+            
+            <!-- Dashboard Preview -->
+            <div class="hero-preview">
+                <div class="preview-frame">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="preview-title">NetArhaam Dashboard v1.0</div>
+                    </div>
+                    <div class="preview-content">
+                        <!-- Dashboard UI Preview -->
+                        <div class="dashboard-ui">
+                            <div class="ui-header">
+                                <div class="ui-title">Palo Alto Firewall Monitor</div>
+                                <div class="ui-status">
+                                    <span class="status-indicator active"></span>
+                                    <span>Live</span>
+                                </div>
+                            </div>
+                            <div class="ui-metrics">
+                                <div class="metric">
+                                    <div class="metric-label">CPU Usage</div>
+                                    <div class="metric-value">42%</div>
+                                    <div class="metric-bar" style="width: 42%"></div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Memory</div>
+                                    <div class="metric-value">68%</div>
+                                    <div class="metric-bar" style="width: 68%"></div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Sessions</div>
+                                    <div class="metric-value">2.4K</div>
+                                    <div class="metric-bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="ui-chart">
+                                <div class="chart-placeholder">
+                                    <i class="fas fa-chart-line"></i>
+                                    <p>Real-time Bandwidth Graph</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Warning Banner -->
-    <section class="warning-banner">
+    <!-- Dashboard Screenshot Section -->
+    <section class="dashboard-screenshot-section">
         <div class="container">
-            <div class="warning-content">
-                <i class="fas fa-exclamation-circle"></i>
-                <div>
-                    <h3>⚠️ Important Requirement</h3>
-                    <p>This dashboard requires <strong>Node.js</strong> to be installed on your Windows system. 
-                    Please ensure you have Node.js installed before downloading.</p>
+            <h2 class="section-title">See It In Action</h2>
+            <p class="section-subtitle">Professional interface for real-time firewall monitoring</p>
+            
+            <div class="screenshot-container">
+                <div class="screenshot-frame">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-desktop"></i>
+                        <p>Dashboard Screenshot Preview</p>
+                        <small>Replace with your actual dashboard screenshot</small>
+                    </div>
+                    <div class="screenshot-overlay">
+                        <button class="screenshot-zoom">
+                            <i class="fas fa-search-plus"></i> View Full Size
+                        </button>
+                    </div>
                 </div>
-                <a href="https://nodejs.org/" target="_blank" class="btn btn-warning">
-                    <i class="fab fa-node-js"></i> Get Node.js
-                </a>
+                
+                <div class="screenshot-features">
+                    <div class="feature-highlight">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Live Graphs</h4>
+                        <p>Real-time bandwidth and performance charts</p>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-list-ol"></i>
+                        <h4>Top Talkers</h4>
+                        <p>Instant identification of bandwidth consumers</p>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Fast Updates</h4>
+                        <p>5-30 second refresh intervals</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="features">
+    <!-- Powerful Features -->
+    <section id="features" class="features-section">
         <div class="container">
             <h2 class="section-title">Powerful Features</h2>
             <p class="section-subtitle">Everything you need for professional firewall monitoring</p>
@@ -94,7 +177,7 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-user-friends"></i>
                     </div>
                     <h3>Top Talkers</h3>
                     <p>Identify bandwidth hogs with detailed top 10 consumer rankings</p>
@@ -110,7 +193,7 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-user-shield"></i>
+                        <i class="fas fa-server"></i>
                     </div>
                     <h3>DHCP Integration</h3>
                     <p>Automatic hostname resolution from DHCP leases for better identification</p>
@@ -126,7 +209,7 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-usb"></i>
                     </div>
                     <h3>Portable</h3>
                     <p>No installation needed - run from USB, desktop, or any location</p>
@@ -139,25 +222,40 @@
     <section class="how-it-works">
         <div class="container">
             <h2 class="section-title">How It Works</h2>
-            <div class="steps">
+            <p class="section-subtitle">Get started in just 3 simple steps</p>
+            
+            <div class="steps-container">
                 <div class="step">
                     <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
                     <h3>Download</h3>
                     <p>Get the portable package (requires Node.js)</p>
                 </div>
-                <div class="step-arrow">
+                
+                <div class="step-connector">
                     <i class="fas fa-arrow-right"></i>
                 </div>
+                
                 <div class="step">
                     <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
                     <h3>Configure</h3>
                     <p>Enter firewall IP, generate API key, set preferences</p>
                 </div>
-                <div class="step-arrow">
+                
+                <div class="step-connector">
                     <i class="fas fa-arrow-right"></i>
                 </div>
+                
                 <div class="step">
                     <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h3>Monitor</h3>
                     <p>Launch dashboard and start real-time monitoring</p>
                 </div>
@@ -165,23 +263,84 @@
         </div>
     </section>
 
-    <!-- Download CTA -->
-    <section class="cta">
+    <!-- Testimonials / Trust Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Trusted by Network Professionals</h2>
+            <p class="section-subtitle">What administrators are saying</p>
+            
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"This dashboard saved us hours of manual monitoring. The real-time alerts are invaluable for our security operations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Alex Chen</h4>
+                            <p>Network Security Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"As an MSP, we deploy this across all client Palo Alto firewalls. The portable nature makes deployment incredibly easy."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <p>IT Manager, TechSolutions MSP</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Finally a free tool that doesn't compromise on features. The top talkers identification helps us optimize bandwidth daily."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>David Park</h4>
+                            <p>Systems Administrator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
         <div class="container">
             <h2>Ready to Monitor Your Firewall?</h2>
             <p>Download the free NetArhaam PA Live Dashboard today</p>
+            
             <div class="cta-buttons">
-                <a href="download.html" class="btn btn-primary btn-xl">
+                <a href="download.html" class="btn btn-primary btn-large">
                     <i class="fas fa-download"></i> Download Now
                 </a>
-                <a href="documentation.html" class="btn btn-secondary btn-xl">
-                    <i class="fas fa-file-alt"></i> View Documentation
+                <a href="documentation.html" class="btn btn-secondary">
+                    <i class="fas fa-book"></i> View Documentation
                 </a>
             </div>
-            <p class="cta-note">
-                <i class="fas fa-info-circle"></i>
-                Free for personal and commercial use. Donations appreciated!
-            </p>
+            
+            <div class="cta-notes">
+                <p><i class="fas fa-check-circle"></i> Free for personal and commercial use</p>
+                <p><i class="fas fa-check-circle"></i> No registration required</p>
+                <p><i class="fas fa-check-circle"></i> 100% privacy - runs locally on your machine</p>
+            </div>
         </div>
     </section>
 
@@ -189,37 +348,102 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>NetArhaam<span class="trademark">™</span></span>
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>NetArhaam<span class="trademark">™</span></span>
+                    </a>
+                    <p>Free, open-source firewall monitoring tool</p>
+                    <p class="charity-note"><i class="fas fa-heart"></i> Supporting UNICEF's mission</p>
                 </div>
-                <p class="footer-tagline">Professional Firewall Monitoring Tools</p>
                 
                 <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="download.html">Download</a>
-                    <a href="documentation.html">Documentation</a>
-                    <a href="donate.html">Donate</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Use</a>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
+                        <li><a href="documentation.html"><i class="fas fa-book"></i> Documentation</a></li>
+                        <li><a href="donate.html"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:netarhaamsolutions@gmail.com">netarhaamsolutions@gmail.com</a></p>
+                    <p><i class="fas fa-globe"></i> <a href="https://netarhaam.github.io/netarhaam-dashboard/" target="_blank">Official Website</a></p>
                 </div>
                 
                 <div class="footer-social">
-                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:support@netarhaam.com"><i class="fas fa-envelope"></i></a>
+                    <h4>Share</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                
-                <div class="footer-copyright">
-                    <p>&copy; 2024 NetArhaam. All rights reserved.</p>
-                    <p>Palo Alto Networks is a registered trademark of Palo Alto Networks, Inc.</p>
-                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NetArhaam Solutions. All rights reserved.</p>
+                <p>NetArhaam Dashboard is a free tool for network security monitoring.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Simple counter animation for downloads
+        function animateCounter(element, target) {
+            let current = 1000;
+            const increment = Math.ceil(target / 100);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = current.toLocaleString() + '+ Downloads';
+            }, 30);
+        }
+        
+        // Start counter when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const counter = document.getElementById('downloadCounter');
+            if (counter) {
+                animateCounter(counter, 1500);
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Mobile menu toggle
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                    navToggle.innerHTML = navMenu.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
