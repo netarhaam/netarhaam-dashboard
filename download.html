@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Download NetArhaam Dashboard - Free Firewall Monitoring Tool</title>
+    <meta name="description" content="Download the free NetArhaam Dashboard for Palo Alto firewall monitoring">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
@@ -27,228 +30,211 @@
             </button>
         </div>
     </nav>
-<section class="hero-section hero-download">
-    <section class="download-hero">
+
+    <!-- Page Header -->
+    <header class="page-header download">
         <div class="container">
             <h1>Download NetArhaam PA Live Dashboard</h1>
-            <p class="subtitle">Free, portable firewall monitoring tool for Windows</p>
+            <p>Free, portable firewall monitoring tool for Windows</p>
             
-            <div class="requirements-alert">
-                <div class="alert-header">
+            <!-- Requirements Alert -->
+            <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 10px; margin-top: 30px; text-align: left;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px; color: #ffc107;">
                     <i class="fas fa-exclamation-triangle"></i>
-                    <h3>⚠️ System Requirements</h3>
+                    <h3 style="margin: 0;">⚠️ System Requirements</h3>
                 </div>
-                <div class="alert-content">
-                    <p><strong>Before downloading, ensure you have:</strong></p>
-                    <ul>
-                        <li><i class="fab fa-windows"></i> <strong>Windows 10/11</strong> (64-bit recommended)</li>
-                        <li><i class="fab fa-node-js"></i> <strong>Node.js</strong> installed (v16 or higher)</li>
-                        <li><i class="fas fa-network-wired"></i> Access to Palo Alto firewall with XML API enabled</li>
-                        <li><i class="fas fa-hdd"></i> 500MB free disk space</li>
-                        <li><i class="fas fa-memory"></i> 4GB RAM minimum</li>
-                    </ul>
-                    <a href="https://nodejs.org/" target="_blank" class="btn btn-warning">
-                        <i class="fab fa-node-js"></i> Download Node.js First
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="download-options">
-        <div class="container">
-            <h2 class="section-title">Choose Your Download</h2>
-            
-            <div class="download-cards">
-                <!-- Main Download Card -->
-                <div class="download-card featured">
-                    <div class="download-card-header">
-                        <i class="fas fa-star"></i>
-                        <h3>Recommended</h3>
-                    </div>
-                    <div class="download-card-body">
-                        <h4>NetArhaam Dashboard Portable</h4>
-                        <p class="version">Version 1.0.0</p>
-                        <p class="description">Complete portable package with auto-installer</p>
-                        
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Includes everything needed</li>
-                            <li><i class="fas fa-check"></i> Auto-installs dependencies</li>
-                            <li><i class="fas fa-check"></i> One-click launcher</li>
-                            <li><i class="fas fa-check"></i> Desktop shortcut creator</li>
-                            <li><i class="fas fa-check"></i> Comprehensive documentation</li>
-                        </ul>
-                        
-                        <div class="file-info">
-                            <p><i class="fas fa-file-archive"></i> File: NetArhaam-Dashboard-Portable.zip</p>
-                            <p><i class="fas fa-weight"></i> Size: ~45 MB</p>
-                            <p><i class="fas fa-download"></i> downloads: <span id="downloadCount">1,234</span></p>
-                        </div>
-                        
-                        <!-- FIXED DOWNLOAD LINK -->
-         <a href="https://github.com/netarhaam/netarhaam-dashboard/raw/main/NetArhaam-Dashboard-Portable.zip" 
-   class="btn btn-primary btn-download" 
-   download="NetArhaam-Dashboard-Portable.zip">
-    <i class="fas fa-download"></i> Download Now (Free)
-</a>
-                        
-                        <p class="note"><i class="fas fa-shield-alt"></i> Virus-free guaranteed</p>
-                    </div>
-                </div>
-                
-                <!-- Alternative Download Card -->
-                <div class="download-card">
-                    <div class="download-card-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Source Code</h3>
-                    </div>
-                    <div class="download-card-body">
-                        <h4>Source Files Only</h4>
-                        <p class="version">For Developers</p>
-                        <p class="description">Just the source files if you want to customize</p>
-                        
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> server.js (main code)</li>
-                            <li><i class="fas fa-check"></i> HTML interface files</li>
-                            <li><i class="fas fa-check"></i> Package.json</li>
-                            <li><i class="fas fa-check"></i> No auto-installer</li>
-                            <li><i class="fas fa-check"></i> Manual setup required</li>
-                        </ul>
-                        
-                        <div class="file-info">
-                            <p><i class="fas fa-file-code"></i> Files: server.js, index.html, dashboard.html</p>
-                            <p><i class="fas fa-weight"></i> Size: ~15 KB</p>
-                        </div>
-                        
-                        <!-- FIXED SOURCE LINK -->
-                        <a href="https://github.com/netarhaam/netarhaam-website/raw/main/source-files.zip" 
-                           class="btn btn-secondary" 
-                           download="source-files.zip">
-                            <i class="fas fa-code"></i> Download Source
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="installation-steps">
-        <div class="container">
-            <h2 class="section-title">Installation Guide</h2>
-            
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <h3>Step 1: Install Node.js</h3>
-                    <p>Download and install Node.js from <a href="https://nodejs.org/" target="_blank">nodejs.org</a></p>
-                    <p class="step-note">Required for the dashboard to run</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                    <h3>Step 2: Download Package</h3>
-                    <p>Download the ZIP file from above</p>
-                    <p class="step-note">Save to any location (Desktop recommended)</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-icon">
-                        <i class="fas fa-folder-open"></i>
-                    </div>
-                    <h3>Step 3: Extract Files</h3>
-                    <p>Right-click the ZIP file → "Extract All"</p>
-                    <p class="step-note">Extract to a folder without spaces in the path</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-icon">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <h3>Step 4: Run Dashboard</h3>
-                    <p>Double-click <code>LAUNCH.bat</code> in the extracted folder</p>
-                    <p class="step-note">First run installs dependencies automatically</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="troubleshooting">
-        <div class="container">
-            <h2 class="section-title">Troubleshooting</h2>
-            
-            <div class="faq">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>❌ "Node.js is not recognized as an internal or external command"</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>This means Node.js is not installed or not in your system PATH.</p>
-                        <p><strong>Solution:</strong> Reinstall Node.js and make sure to check "Add to PATH" during installation.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>❌ "Port 3000 is already in use"</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Another application is using port 3000.</p>
-                        <p><strong>Solution:</strong> Close other applications or edit server.js to use a different port.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>❌ "Cannot find module 'express'"</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Dependencies failed to install.</p>
-                        <p><strong>Solution:</strong> Open Command Prompt in the dashboard folder and run: <code>npm install</code></p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>❌ Browser doesn't open automatically</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Some security software blocks auto-browser opening.</p>
-                        <p><strong>Solution:</strong> Open browser manually to: <code>http://localhost:3000</code></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="support-cta">
-        <div class="container">
-            <div class="support-content">
-                <i class="fas fa-life-ring"></i>
-                <div>
-                    <h3>Need Help?</h3>
-                    <p>Check our <a href="documentation.html">documentation</a> or <a href="contact.html">contact support</a></p>
-                </div>
-                <a href="donate.html" class="btn btn-primary">
-                    <i class="fas fa-heart"></i> Support Development
+                <p><strong>Before downloading, ensure you have:</strong></p>
+                <ul style="list-style: none; margin: 15px 0;">
+                    <li><i class="fab fa-windows"></i> <strong>Windows 10/11</strong> (64-bit recommended)</li>
+                    <li><i class="fab fa-node-js"></i> <strong>Node.js</strong> installed (v16 or higher)</li>
+                    <li><i class="fas fa-network-wired"></i> Access to Palo Alto firewall with XML API enabled</li>
+                </ul>
+                <a href="https://nodejs.org/" target="_blank" class="btn btn-warning" style="margin-top: 15px;">
+                    <i class="fab fa-node-js"></i> Download Node.js First
                 </a>
             </div>
         </div>
-    </section>
+    </header>
 
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Download Options -->
+            <section class="content-section">
+                <h2 class="section-title">Choose Your Download</h2>
+                
+                <div class="download-box">
+                    <h3><i class="fas fa-star" style="color: #ffc107;"></i> Recommended: NetArhaam Dashboard Portable</h3>
+                    <p><strong>Version 1.0.0</strong> - Complete portable package with auto-installer</p>
+                    
+                    <ul class="download-list">
+                        <li><i class="fas fa-check"></i> Includes everything needed</li>
+                        <li><i class="fas fa-check"></i> Auto-installs dependencies</li>
+                        <li><i class="fas fa-check"></i> One-click launcher</li>
+                        <li><i class="fas fa-check"></i> Desktop shortcut creator</li>
+                        <li><i class="fas fa-check"></i> Comprehensive documentation</li>
+                    </ul>
+                    
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p><i class="fas fa-file-archive"></i> <strong>File:</strong> NetArhaam-Dashboard-Portable.zip</p>
+                        <p><i class="fas fa-weight"></i> <strong>Size:</strong> ~45 MB</p>
+                        <p><i class="fas fa-download"></i> <strong>Downloads:</strong> 1,234+</p>
+                    </div>
+                    
+                    <a href="https://github.com/netarhaam/netarhaam-dashboard/raw/main/NetArhaam-Dashboard-Portable.zip" 
+                       class="btn btn-primary btn-large" style="width: 100%; text-align: center;">
+                        <i class="fas fa-download"></i> Download Now (Free)
+                    </a>
+                    
+                    <p style="text-align: center; margin-top: 15px; color: #666;">
+                        <i class="fas fa-shield-alt"></i> Virus-free guaranteed
+                    </p>
+                </div>
+                
+                <div class="download-box">
+                    <h3><i class="fas fa-code"></i> Source Code (For Developers)</h3>
+                    <p><strong>Source Files Only</strong> - Just the source files if you want to customize</p>
+                    
+                    <ul class="download-list">
+                        <li><i class="fas fa-check"></i> server.js (main code)</li>
+                        <li><i class="fas fa-check"></i> HTML interface files</li>
+                        <li><i class="fas fa-check"></i> Package.json</li>
+                        <li><i class="fas fa-check"></i> No auto-installer</li>
+                        <li><i class="fas fa-check"></i> Manual setup required</li>
+                    </ul>
+                    
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p><i class="fas fa-file-code"></i> <strong>Files:</strong> server.js, index.html, dashboard.html</p>
+                        <p><i class="fas fa-weight"></i> <strong>Size:</strong> ~15 KB</p>
+                    </div>
+                    
+                    <a href="https://github.com/netarhaam/netarhaam-dashboard/raw/main/source-files.zip" 
+                       class="btn btn-secondary" style="width: 100%; text-align: center;">
+                        <i class="fas fa-code"></i> Download Source
+                    </a>
+                </div>
+            </section>
+
+            <!-- Installation Guide -->
+            <section class="content-section">
+                <h2 class="section-title">Installation Guide</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <i class="fab fa-node-js" style="font-size: 3rem;"></i>
+                        <h3>Step 1: Install Node.js</h3>
+                        <p>Download and install Node.js from <a href="https://nodejs.org/" target="_blank">nodejs.org</a></p>
+                        <p style="color: #666; font-size: 0.9rem;"><i class="fas fa-info-circle"></i> Required for the dashboard to run</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <i class="fas fa-download" style="font-size: 3rem;"></i>
+                        <h3>Step 2: Download Package</h3>
+                        <p>Download the ZIP file from above</p>
+                        <p style="color: #666; font-size: 0.9rem;"><i class="fas fa-info-circle"></i> Save to any location (Desktop recommended)</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <i class="fas fa-folder-open" style="font-size: 3rem;"></i>
+                        <h3>Step 3: Extract Files</h3>
+                        <p>Right-click the ZIP file → "Extract All"</p>
+                        <p style="color: #666; font-size: 0.9rem;"><i class="fas fa-info-circle"></i> Extract to a folder without spaces in the path</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <i class="fas fa-play" style="font-size: 3rem;"></i>
+                        <h3>Step 4: Run Dashboard</h3>
+                        <p>Double-click <code>LAUNCH.bat</code> in the extracted folder</p>
+                        <p style="color: #666; font-size: 0.9rem;"><i class="fas fa-info-circle"></i> First run installs dependencies automatically</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Troubleshooting -->
+            <section class="content-section">
+                <h2 class="section-title">Troubleshooting</h2>
+                
+                <div class="download-box">
+                    <h4><span style="color: #dc3545;">❌</span> "Node.js is not recognized as an internal or external command"</h4>
+                    <p>This means Node.js is not installed or not in your system PATH.</p>
+                    <p><strong>Solution:</strong> Reinstall Node.js and make sure to check "Add to PATH" during installation.</p>
+                </div>
+                
+                <div class="download-box">
+                    <h4><span style="color: #dc3545;">❌</span> "Port 3000 is already in use"</h4>
+                    <p>Another application is using port 3000.</p>
+                    <p><strong>Solution:</strong> Close other applications or edit server.js to use a different port.</p>
+                </div>
+                
+                <div class="download-box">
+                    <h4><span style="color: #dc3545;">❌</span> "Cannot find module 'express'"</h4>
+                    <p>Dependencies failed to install.</p>
+                    <p><strong>Solution:</strong> Open Command Prompt in the dashboard folder and run: <code>npm install</code></p>
+                </div>
+                
+                <div class="download-box">
+                    <h4><span style="color: #dc3545;">❌</span> "Browser doesn't open automatically"</h4>
+                    <p>Some security software blocks auto-browser opening.</p>
+                    <p><strong>Solution:</strong> Open browser manually to: <code>http://localhost:3000</code></p>
+                </div>
+            </section>
+
+            <!-- Support CTA -->
+            <section class="content-section" style="text-align: center;">
+                <div style="background: #f8f9fa; padding: 40px; border-radius: 10px;">
+                    <i class="fas fa-life-ring" style="font-size: 3rem; color: #667eea; margin-bottom: 20px;"></i>
+                    <h3>Need Help?</h3>
+                    <p>Check our <a href="documentation.html">documentation</a> or <a href="contact.html">contact support</a></p>
+                    <a href="donate.html" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-heart"></i> Support Development
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <!-- Same footer as index.html -->
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="color: white; font-size: 1.3rem;">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>NetArhaam<span class="trademark">™</span></span>
+                    </a>
+                    <p style="color: #aaa; margin-top: 10px;">Free, open-source firewall monitoring tool</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 style="color: white; margin-bottom: 20px;">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="download.html"><i class="fas fa-download"></i> Download</a></li>
+                        <li><a href="documentation.html"><i class="fas fa-book"></i> Documentation</a></li>
+                        <li><a href="donate.html"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 style="color: white; margin-bottom: 20px;">Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:netarhaamsolutions@gmail.com">netarhaamsolutions@gmail.com</a></p>
+                    <p><i class="fas fa-globe"></i> <a href="https://netarhaam.github.io/netarhaam-dashboard/">Official Website</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NetArhaam Solutions. All rights reserved.</p>
+                <p>NetArhaam Dashboard is a free tool for network security monitoring.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
